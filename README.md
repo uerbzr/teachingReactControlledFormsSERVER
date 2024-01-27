@@ -1,6 +1,6 @@
 # C# Server for the React Controlled Form
 
-[](https://github.com/uerbzr/teachingReactControlledForms)
-[](https://github.com/uerbzr/teachingReactControlledFormsSERVER)
+[React Controlled Forms](https://github.com/uerbzr/teachingReactControlledForms)
+[React Controlled Forms Server](https://github.com/uerbzr/teachingReactControlledFormsSERVER)
 
 
