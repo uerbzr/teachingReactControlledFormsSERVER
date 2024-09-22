@@ -31,9 +31,9 @@ namespace workshop.wwwapi.Repository
         {
             return await _table.ToListAsync();
         }
-        public T GetById(object id)
+        public async Task<T> GetById(object id)
         {
-            return _table.Find(id);
+            return await _table.FindAsync(id);
         }
 
         public async Task<T> Insert(T obj)
