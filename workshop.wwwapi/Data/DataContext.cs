@@ -10,6 +10,6 @@ namespace workshop.wwwapi.Data
         {
 
         }
-        public DbSet<Complaint> People { get; set; }
+        public DbSet<ComplaintDetails> People { get; set; }
     }
 }

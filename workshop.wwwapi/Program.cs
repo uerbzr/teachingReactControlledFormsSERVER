@@ -11,7 +11,7 @@ builder.Services.AddDbContext<DataContext>(opt => {
     opt.UseInMemoryDatabase("Complaints");
 });
 builder.Services.AddCors();
-builder.Services.AddScoped<IRepository<Complaint>, Repository<Complaint>>();
+builder.Services.AddScoped<IRepository<ComplaintDetails>, Repository<ComplaintDetails>>();
 var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
@@ -20,8 +20,8 @@ if (app.Environment.IsDevelopment())
     app.UseCors(x => x
                   .AllowAnyMethod()
                   .AllowAnyHeader()
-                  .SetIsOriginAllowed(origin => true) // allow any origin
-                  .AllowCredentials()); // allow credentials
+                  .SetIsOriginAllowed(origin => true) 
+                  .AllowCredentials()); 
 }
 app.UseHttpsRedirection();
 app.ConfigureComplaintsEndpoint();
