@@ -1,16 +1,16 @@
 # C# Server for the React Controlled Form
 
-Simple full stack example 
-[React Controlled Forms](https://github.com/uerbzr/teachingReactControlledForms)  
+## Setup
 
-[React Controlled Forms Server](https://github.com/uerbzr/teachingReactControlledFormsSERVER)  
+Simple full stack example requires frontend/backend.  Based the Standalone version.
 
-```
-This repository is a .Net WebApi project which accepts the React Controlled Form in the repo mentioned above.
+Check the onSubmit function in the front end.  Note the hard coded route & port POSTs to the correct back end route/port!
 
+- [React Controlled Forms FrontEnd](https://github.com/uerbzr/teachingReactControlledForms)  
 
+- [React Controlled Forms Server](https://github.com/uerbzr/teachingReactControlledFormsSERVER)  
 
+- Based on [React Controlled Forms Standalone](https://github.com/uerbzr/teachingReactControlledFormsStandalone)
 
-```
 
 

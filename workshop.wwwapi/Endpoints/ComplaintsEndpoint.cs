@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 using System.Security.Claims;
 using System.Web.Http.Cors;
 using workshop.wwwapi.DTO;
@@ -35,7 +36,7 @@ namespace workshop.wwwapi.Endpoints
         {
 
             var entity = await service.Insert(new ComplaintDetails() { Name = model.name, Address=model.address, Phone=model.phone, Email=model.email, Complaint=model.complaint, Contact=model.contact, Consent=model.consent.Value });
-            
+            Debug.WriteLine(entity);
             return TypedResults.Ok(new { status="added record", data= new { name=entity.Name, address=entity.Address, phone=entity.Phone, email=entity.Phone, complaint=entity.Complaint, contact=entity.Contact, consent=entity.Consent ? "consent given":"no consent given" } });
         }
     }
